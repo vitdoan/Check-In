@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import {useLoadScript} from "@react-google-maps/api";
+import Map from "./components/Map/Map";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//ROUTE: SIGN IN: 1, REGISTER: 2, HOME: 3
+const curDate = new Date();
+
+var date = curDate.getDate() + "/" + (curDate.getMonth()+1)  + "/" + curDate.getFullYear();
+var time = curDate.getHours() + ":" + curDate.getMinutes() + ":" + curDate.getSeconds();
+const database = {
+    name: 'vi',
+    currentLocation:'',
+    pastLocations:[{
+        placeID: 1,
+        count: 0
+    }],
+    date: date,
+    time: time
 }
 
-export default App;
+export default function App (){
+    const state = useState({
+        route: 1,
+        isSignedIn: false
+    })
+    const { isLoaded } = useLoadScript({
+		googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+	});
+    return <Map isLoaded={isLoaded} date = {date} time = {time}/>
+}

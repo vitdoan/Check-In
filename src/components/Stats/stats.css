@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(246, 246, 246);
+}
+.StatsCard {
+    padding: 20px;
+    text-align: center;
+}
+
+.StatsCard button {
+    padding: 15px;
+    width: 80%;
+    font-size: xx-large;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #B983FF;
+    margin-bottom: 40px;
+}
+
+.StatsCard button:hover{
+    background-color: #94B3FD;
+}
+
+.StatsCard button:active{
+    background-color: #4f6eb5;
+}
+
+.addressCard, .stats {
+    display: grid;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.stats {
+    display: flex;
+    font-size: x-large;
+    column-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addressCard h3, .addressCard p {
+    margin: 5px;
+}
+
+.stats img {
+    height: 80%;
+}
+
+.statsDescription {
+}
+
+.num, .num2, .text {
+    display: flex;
+    justify-content: flex-end;
+}
+.num {
+    font-size: 28px;
+}
+.num2 {
+    font-size: 20px;
+}
+
+.text {
+    margin-top: 5px;
+    color: rgb(75, 74, 74);
+}
