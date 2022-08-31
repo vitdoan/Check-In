@@ -23,9 +23,7 @@ export default function Map({ isLoaded, date, time }) {
 
 	if (!isEnabled || !isLoaded) {
 		return (
-			<div className='loading'>
-				<h1>Loading...</h1>
-			</div>
+			<div class="lds-facebook"><div></div><div></div><div></div></div>
 		);
 	}
 
