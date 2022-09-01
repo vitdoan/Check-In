@@ -6,7 +6,7 @@
 .StatsCard button {
     padding: 15px;
     width: 80%;
-    font-size: xx-large;
+    font-size: 2rem;
     color: white;
     border-radius: 5px;
     border: none;
@@ -30,12 +30,12 @@
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     padding: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .stats {
     display: flex;
-    font-size: x-large;
+    font-size: 1.5rem;
     column-gap: 20px;
     justify-content: space-between;
     align-items: center;
