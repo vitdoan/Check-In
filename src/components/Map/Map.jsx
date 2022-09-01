@@ -5,7 +5,7 @@ import "./map.css";
 import Geocode from "react-geocode";
 Geocode.setApiKey(process.env.REACT_APP_GOOGLE_MAPS_API_KEY);
 
-export default function Map({ isLoaded, date, time, handleCheckIn, count, timeDate, prevVisit }) {
+export default function Map({ isLoaded, handleCheckIn, count, timeDate, prevVisit }) {
 	let [coordinates, setCoordinates] = useState({ lat: 35.67, lng: 139.65 });
 	let [isEnabled, setEnable] = useState(false);
 	let [address, setAddress] = useState("");
@@ -51,7 +51,7 @@ export default function Map({ isLoaded, date, time, handleCheckIn, count, timeDa
 			style={{
 				display: "grid",
 				columnGap: "10px",
-				gridTemplateColumns: "2.5fr 1fr",
+				gridTemplateColumns: "2fr 1fr",
 			}}
 		>
 			<GoogleMap
@@ -67,7 +67,7 @@ export default function Map({ isLoaded, date, time, handleCheckIn, count, timeDa
 					position={coordinates}
 				/>
 			</GoogleMap>
-			<Stats date={date} time={time} address={address} place_id={place_id} handleCheckIn={handleCheckIn} count={count} timeDate={timeDate} prevVisit={prevVisit}/>
+			<Stats address={address} place_id={place_id} handleCheckIn={handleCheckIn} count={count} timeDate={timeDate} prevVisit={prevVisit}/>
 		</div>
 	);
 }
