@@ -1,6 +1,36 @@
-# Getting Started with Create React App
+# Places Around Me
+<img width="1278" alt="Screen Shot 2022-08-31 at 20 40 42" src="https://user-images.githubusercontent.com/106452170/187713540-a7eea1e7-ad5b-45cf-a823-ea57cca15a41.png">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
+Build this Place Advisor to help you be able to find and sort by rating near by restaurants in an area. Use your current location to fetch datas of hotels and restaurants near by. 
+
+APIs:
+- Geolocation
+- Google Maps API
+- Rapid APIs
+
+Built with: 
+- ReactJS
+- JavaScript
+
+## Getting Started
+To get a local copy up and running follow these simple example steps.
+
+### Installation
+
+1. Get a free API Key at [Rapid API](https://rapidapi.com/hub)
+2. Clone the repo
+```
+git clone https://github.com/vitdoan/Place-Advisor.git
+```
+3. Install NPM packages
+```
+npm install
+```
+4. Enter your API in `config.js`
+```
+const API_KEY = 'ENTER YOUR API';
+```
 
 ## Available Scripts
 
@@ -68,4 +98,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# check-me-in
+# Place-Advisor
