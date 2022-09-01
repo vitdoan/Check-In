@@ -5,10 +5,11 @@ import "./map.css";
 import Geocode from "react-geocode";
 Geocode.setApiKey(process.env.REACT_APP_GOOGLE_MAPS_API_KEY);
 
-export default function Map({ isLoaded, date, time }) {
+export default function Map({ isLoaded, date, time, handleCheckIn, count, timeDate, prevVisit }) {
 	let [coordinates, setCoordinates] = useState({ lat: 35.67, lng: 139.65 });
 	let [isEnabled, setEnable] = useState(false);
-    let [address, setAddress] = useState('');
+	let [address, setAddress] = useState("");
+	let [place_id, setPlaceId] = useState("");
 
 	useEffect(() => {
 		navigator.geolocation.getCurrentPosition(
@@ -23,34 +24,50 @@ export default function Map({ isLoaded, date, time }) {
 
 	if (!isEnabled || !isLoaded) {
 		return (
-			<div class="lds-facebook"><div></div><div></div><div></div></div>
+			<div className="lds-facebook">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
 		);
 	}
 
 	Geocode.fromLatLng(coordinates.lat, coordinates.lng).then(
 		(response) => {
-		  const address = response.results[0].formatted_address;
-		  console.log(address);
-		  setAddress(address);
+			let data = response.results[0];
+			const address = data.formatted_address;
+			console.log(address);
+			setAddress(address);
+			setPlaceId(data.place_id);
 		},
 		(error) => {
-		  console.error(error);
+			console.error(error);
 		}
-	  );
+	);
 
 	return (
-		<div className="body-container" style={{display: 'grid', columnGap: '10px', gridTemplateColumns: '3fr 1fr'}}>
-			<GoogleMap
-			mapContainerClassName="map-container"
-			zoom={21}
-			center={coordinates}
-			options={{
-				zoomControl: true,
+		<div
+			className="body-container"
+			style={{
+				display: "grid",
+				columnGap: "10px",
+				gridTemplateColumns: "2.5fr 1fr",
 			}}
 		>
-			<Marker mapContainerClassName="map-marker" position={coordinates} />
+			<GoogleMap
+				mapContainerClassName="map-container"
+				zoom={21}
+				center={coordinates}
+				options={{
+					zoomControl: true,
+				}}
+			>
+				<Marker
+					mapContainerClassName="map-marker"
+					position={coordinates}
+				/>
 			</GoogleMap>
-			<Stats date = {date} time = {time} address={address} />
+			<Stats date={date} time={time} address={address} place_id={place_id} handleCheckIn={handleCheckIn} count={count} timeDate={timeDate} prevVisit={prevVisit}/>
 		</div>
 	);
 }
