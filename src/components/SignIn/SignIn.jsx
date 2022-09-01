@@ -35,6 +35,7 @@ export default function SignIn({changeRoute, loadUser}) {
     }
 
     return <div className="login">
+    <h1>Welcome Back!</h1>
   <input type="text" placeholder="Username" onChange={onUsernameChange} className='username'/>
   <input type="password" placeholder="Password" onChange={onPasswordChange} className='password'/>
   <button className='loginButton' onClick={onSubmitSignIn}>Sign In</button>

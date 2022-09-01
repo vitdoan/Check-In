@@ -42,6 +42,7 @@ export default function Register({ changeRoute, loadUser }) {
 
 	return (
 		<div className="login">
+      <h1>User Registration</h1>
 			<input
 				type="text"
 				placeholder="Name"
@@ -63,6 +64,7 @@ export default function Register({ changeRoute, loadUser }) {
 			<button className="loginButton" onClick={onSubmitRegister}>
 				Register
 			</button>
+      <div className='signup-option'>Back to <a href="#" onClick={()=>changeRoute(1)}>Sign In</a></div>
 		</div>
 	);
 }

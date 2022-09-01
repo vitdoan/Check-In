@@ -13,7 +13,7 @@ export default function Stats({
     prevVisit
 }) {
 	const handleTime = () => {
-		if (timeDate.length > 0) {
+		if (timeDate && timeDate.length > 0) {
             let myDate = new Date(timeDate);
 			var time =
 				myDate.getHours() +
@@ -34,7 +34,7 @@ export default function Stats({
 	};
 
     const handleDate = () => {
-        if (timeDate.length > 0) {
+        if (timeDate && timeDate.length > 0) {
             let myDate = new Date(timeDate);
 			var date =
 				myDate.getDate() +
@@ -55,7 +55,7 @@ export default function Stats({
     }
 
     const handlePrevTime = () => {
-        if(prevVisit === 'NONE'){
+        if(prevVisit === 'none'){
             return 'You have not been here before.';
         }
         if(prevVisit && prevVisit.length > 1) {
