@@ -6,12 +6,12 @@
 
 1. [About The Project](#about-the-project)
     * [APIs](#apis)
-    * [Built-with](#built-with)
+    * [Built with](#built-with)
     * [Packages](#packages)
 2. [Getting Started](#getting-started)
     * [Installation](#installation)
 3. [Author](#author)
-4. [Avaiable-Scripts](#avaiable-scripts)
+4. [Avaiable Scripts](#avaiable-scripts)
 
 
 ## About The Project
