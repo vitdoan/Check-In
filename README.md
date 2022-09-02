@@ -56,9 +56,9 @@ REACT_APP_WEATHER_API_KEY=YOUR_API_KEY
 ```
 
 ### Usage
-Sign In and Register page.
+Register and Sign In Page.
 
-<img width="200" alt="Sign In" src="https://user-images.githubusercontent.com/106452170/188215730-2d102285-c6e1-45dd-aec6-71e8022441c7.png"> <img width="200" alt="Register" src="https://user-images.githubusercontent.com/106452170/188215771-0e61e240-1971-4588-89ec-86ec44c6171c.png">
+<img width="200" alt="Register" src="https://user-images.githubusercontent.com/106452170/188215771-0e61e240-1971-4588-89ec-86ec44c6171c.png"> <img width="200" alt="Sign In" src="https://user-images.githubusercontent.com/106452170/188215730-2d102285-c6e1-45dd-aec6-71e8022441c7.png">
 
 ## Author
 
