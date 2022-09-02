@@ -1,5 +1,6 @@
 # Places Around Me
-<img alt="Screen Shot 2022-09-02 at 07 26 26" src="https://user-images.githubusercontent.com/106452170/188034399-5480de76-5a1c-4bfa-8273-e2896aeb5252.png">
+<img alt="Screen Shot 2022-09-02 at 07 39 51" src="https://user-images.githubusercontent.com/106452170/188035210-7a19fc4c-ad54-43d4-9316-3c55a4520cc7.png">
+
 
 
 ## Introduction
