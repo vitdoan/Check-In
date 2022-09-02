@@ -55,6 +55,9 @@ REACT_APP_GOOGLE_MAPS_API_KEY=YOUR_API_KEY
 REACT_APP_WEATHER_API_KEY=YOUR_API_KEY
 ```
 
+### Usage
+Sign In and Register page.
+
 ## Author
 
 👤 **Vi Doan**
