@@ -15,7 +15,11 @@
 
 
 ## About The Project
-This Web Application helps user check in 
+This Web Application allows users to endlessly check in their current location and keep track of the number of times
+they have visited the place. Once current location is enabled, users can see its address, latitude and longitude,
+and the current weather information.
+
+Weather information includes current temperature, description, wind speed, humidity percent, max and min temperature.
 
 ### APIs:
 - Geocoding
