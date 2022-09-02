@@ -5,19 +5,22 @@
 # Table of Contents
 
 1. [About The Project](#about-the-project)
+    * [APIs](#apis)
+    * [Built-with](#built-with)
 2. [Getting Started](#getting-started)
-3. [Installation](#installation)
+    * [Installation](#installation)
+3. 
 
 
 ## About The Project
 This Web Application helps user check in 
 
-APIs:
+* APIs:
 - Geolocation
 - Google Maps API
 - Rapid APIs
 
-Built with: 
+* Built with: 
 - ReactJS
 - JavaScript
 
