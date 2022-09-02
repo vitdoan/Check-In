@@ -16,12 +16,13 @@ export default function Map({ isLoaded, handleCheckIn, count, timeDate, prevVisi
 			({ coords: { latitude, longitude } }) => {
 				if (latitude && longitude) {
 					setEnable(true);
-					setCoordinates({ lat: 35.633, lng: 139.8804 })
-					// setCoordinates({ lat: latitude, lng: longitude });
+					//35.632817899835295, 139.88038356915683
+					// setCoordinates({ lat: 35.6328, lng: 139.88038})
+					setCoordinates({ lat: latitude, lng: longitude });
 				}
 			}
 		);
-	}, []);
+	},[]);
 
 	if (!isEnabled || !isLoaded) {
 		return (
@@ -37,9 +38,9 @@ export default function Map({ isLoaded, handleCheckIn, count, timeDate, prevVisi
 		(response) => {
 			let data = response.results[0];
 			const address = data.formatted_address;
-			console.log(data.place_id);
 			setAddress(address);
 			setPlaceId(data.place_id);
+			console.log(data.place_id);
 		},
 		(error) => {
 			console.error(error);
@@ -68,7 +69,7 @@ export default function Map({ isLoaded, handleCheckIn, count, timeDate, prevVisi
 					position={coordinates}
 				/>
 			</GoogleMap>
-			<Stats address={address} place_id={place_id} handleCheckIn={handleCheckIn} count={count} timeDate={timeDate} prevVisit={prevVisit}/>
+			<Stats coordinates={coordinates} address={address} place_id={place_id} handleCheckIn={handleCheckIn} count={count} timeDate={timeDate} prevVisit={prevVisit}/>
 		</div>
 	);
 }

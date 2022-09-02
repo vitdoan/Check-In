@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #2c3338;
+    background-color: rgb(239, 239, 239);
 }
 ::placeholder{
     color: #6c757d;
@@ -54,5 +54,5 @@ body {
 
 h1{
     text-align: center;
-    color: #b6b6b6;
+    color: #565656;
 }

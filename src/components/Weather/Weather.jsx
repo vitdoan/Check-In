@@ -17,17 +17,16 @@ const weekday = [
 const d = new Date();
 let day = weekday[d.getDay()];
 
-export default function Weather() {
+export default function Weather({ coordinates }) {
 	const [weather, setWeather] = useState("");
 	const [city, setCity] = useState("");
 	// const apiKey = process.env.REACT_APP_APIKEY;
 	const apiKey = "6fc2d866008ab22cb737eb0937e4899d";
 
 	const apiCall = async (e) => {
-		const url = `https://api.openweathermap.org/data/2.5/weather?lat=35.63304002534157&lon=139.8803920509921&appid=${apiKey}&units=metric`;
+		const url = `https://api.openweathermap.org/data/2.5/weather?lat=${coordinates.lat}&lon=${coordinates.lng}&appid=${apiKey}&units=metric`;
 		const req = axios.get(url);
 		const res = await req;
-		console.log(res.data);
 		setWeather({
 			description: res.data.weather[0].description.toUpperCase(),
 			icon: res.data.weather[0].icon,
@@ -48,8 +47,6 @@ export default function Weather() {
 		apiCall();
 	}, []);
 
-	console.log(weather);
-
 	const handleWeatherIcon = () => {
 		let url = `https://openweathermap.org/img/wn/${weather.icon}@2x.png`;
 		return <img src={url} alt={weather.icon} />;
@@ -64,7 +61,8 @@ export default function Weather() {
 			</div>
 			<div className="row2">
 				<div className="col1">
-					<div className="weatherData" style={{ fontSize: "1.6rem" }}>
+                    <div className="temperature">{weather.temp}°</div>
+					<div className="weatherData" style={{ fontSize: "1.2rem" }}>
 						{day}
 					</div>
 					<div className="weatherData">
@@ -73,18 +71,17 @@ export default function Weather() {
 					<div className="weatherData">
 						<img src={humidity} alt="" /> {weather.humidity}%
 					</div>
+					<div className="weatherData">
+						Feels Like: {weather.feels_like}°
+					</div>
+					<div className="weatherData">Degree Type: Celcius</div>
 				</div>
 				<div className="col2">
 					{handleWeatherIcon()}
-					<div style={{ fontSize:'1.7rem'}}>{weather.description}</div>
+					<div style={{ fontSize: "1.3rem" }}>
+						{weather.description}
+					</div>
 				</div>
-				<div className="col3">
-					<div className="temperature">{weather.temp}°</div>
-				</div>
-			</div>
-			<div className="row3">
-				<div className="weatherData">Feels Like: {weather.feels_like}°</div>
-				<div className="weatherData">Degree Type: Celcius</div>
 			</div>
 		</div>
 	);
