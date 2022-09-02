@@ -1,0 +1,58 @@
+.weatherCard {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 1.4rem;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.row1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row1 .col1 {
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.row1 .col2 {
+    text-align: right;
+    font-size: 1.6rem;
+}
+
+.row2{
+    display: flex;
+    column-gap: 2px;
+    justify-content: space-between;
+}
+
+.row2 .col3 {
+    display: grid;
+    align-items: center;
+}
+
+.row3 {
+    display: flex;
+    column-gap: 15px;
+    justify-content: space-between;
+}
+
+.weatherData {
+    display: flex;
+    font-size: 1.4rem;
+    text-align: left;
+    margin: 5px 0;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.weatherData img {
+    width: 28px;
+}
+
+.temperature {
+    font-size: 4.6rem;
+}

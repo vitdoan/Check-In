@@ -2,17 +2,24 @@
     padding: 20px;
     text-align: center;
 }
-
+.statsContainer{
+    width: 80%;
+}
 .StatsCard button {
     padding: 15px;
-    width: 80%;
+    width: 20%;
     font-size: 2rem;
     color: white;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     border: none;
     cursor: pointer;
     background-color: #B983FF;
-    margin-bottom: 40px;
+    /* margin: 40px 0; */
+}
+
+.StatsCard button div {
+    white-space: nowrap; 
+    overflow: hidden;
 }
 
 .StatsCard button:hover{
@@ -27,15 +34,19 @@
     display: grid;
     background-color: white;
     border: none;
-    border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    padding: 25px;
+    padding: 10px 20px;
+    margin-bottom: 0px;
+}
+
+.addressCard {
+    border-radius: 5px;
     margin-bottom: 20px;
 }
 
 .stats {
     display: flex;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     column-gap: 20px;
     justify-content: space-between;
     align-items: center;
@@ -46,8 +57,21 @@
 }
 
 .stats img {
-    height: 80%;
+    width: 55px;
 }
+
+
+@media (max-width: 1530px) {
+    .stats img {
+        width: 50px;
+    }
+    button img {
+        width: 45px;
+    }
+    .StatsCard button{
+        padding: 5px;
+    }
+  }
 
 .statsDescription {
     text-align: right;
@@ -58,13 +82,17 @@
     justify-content: flex-end;
 }
 .num {
-    font-size: 28px;
+    font-size: 1.6rem;
 }
 .num2 {
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 .text {
     margin-top: 5px;
     color: rgb(75, 74, 74);
+}
+
+.statsAndButtonContainer {
+    display: flex;
 }

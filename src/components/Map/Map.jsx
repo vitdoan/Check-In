@@ -6,7 +6,7 @@ import Geocode from "react-geocode";
 Geocode.setApiKey(process.env.REACT_APP_GOOGLE_MAPS_API_KEY);
 
 export default function Map({ isLoaded, handleCheckIn, count, timeDate, prevVisit }) {
-	let [coordinates, setCoordinates] = useState({ lat: 35.63304002534157, lng: 139.8803920509921 });
+	let [coordinates, setCoordinates] = useState({ lat: 35.633, lng: 139.8804 });
 	let [isEnabled, setEnable] = useState(false);
 	let [address, setAddress] = useState("");
 	let [place_id, setPlaceId] = useState("");
@@ -16,7 +16,7 @@ export default function Map({ isLoaded, handleCheckIn, count, timeDate, prevVisi
 			({ coords: { latitude, longitude } }) => {
 				if (latitude && longitude) {
 					setEnable(true);
-					setCoordinates({ lat: 35.63304002534157, lng: 139.8803920509921 })
+					setCoordinates({ lat: 35.633, lng: 139.8804 })
 					// setCoordinates({ lat: latitude, lng: longitude });
 				}
 			}
@@ -52,7 +52,7 @@ export default function Map({ isLoaded, handleCheckIn, count, timeDate, prevVisi
 			style={{
 				display: "grid",
 				columnGap: "10px",
-				gridTemplateColumns: "2fr 1fr",
+				gridTemplateColumns: "2fr 1.1fr",
 			}}
 		>
 			<GoogleMap
