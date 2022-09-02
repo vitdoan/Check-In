@@ -10,7 +10,8 @@
     * [Packages](#packages)
 2. [Getting Started](#getting-started)
     * [Installation](#installation)
-3. 
+3. [Author](#author)
+4. [Avaiable-Scripts](#avaiable-scripts)
 
 
 ## About The Project
