@@ -1,6 +1,7 @@
 # Check In
+<img alt="Website demo" src="https://user-images.githubusercontent.com/106452170/188197204-f4b204c0-e97f-4bcb-b688-54eae6d7436d.png">
 
-<img alt="Screen Shot 2022-09-02 at 07 39 51" src="https://user-images.githubusercontent.com/106452170/188035210-7a19fc4c-ad54-43d4-9316-3c55a4520cc7.png">
+
 
 # Table of Contents
 
