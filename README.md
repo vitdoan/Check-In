@@ -1,6 +1,5 @@
 # Check In
-<img alt="Website demo" src="https://user-images.githubusercontent.com/106452170/188197204-f4b204c0-e97f-4bcb-b688-54eae6d7436d.png">
-
+<img alt="Web Demo" src="https://user-images.githubusercontent.com/106452170/188200882-e930fdc6-b848-4c18-ac9f-c52da9c9fdd9.png">
 
 
 # Table of Contents
