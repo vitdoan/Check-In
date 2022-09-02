@@ -1,10 +1,22 @@
-# Places Around Me
+# Check In
+
+CONTENTS OF THIS FILE
+---------------------
+
+ * About The Project
+ * Requirements
+ * Recommended modules
+ * Installation
+ * Configuration
+ * Troubleshooting
+ * FAQ
+ * Maintainers
+
 <img alt="Screen Shot 2022-09-02 at 07 39 51" src="https://user-images.githubusercontent.com/106452170/188035210-7a19fc4c-ad54-43d4-9316-3c55a4520cc7.png">
 
 
-
-## Introduction
-Build this Place Advisor to help you be able to find and sort by rating near by restaurants in an area. Use your current location to fetch datas of hotels and restaurants near by. 
+## About The Project
+This Web Application helps user check in 
 
 APIs:
 - Geolocation
