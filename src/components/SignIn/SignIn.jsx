@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import './signin.css'
+import './signin.css';
+import google from './images/google.png';
+import facebook from './images/facebook.png';
 
 export default function SignIn({changeRoute, loadUser}) {
     let [userName, setUsername] = useState('');
@@ -39,6 +41,21 @@ export default function SignIn({changeRoute, loadUser}) {
   <input type="text" placeholder="Username" onChange={onUsernameChange} className='username'/>
   <input type="password" placeholder="Password" onChange={onPasswordChange} className='password'/>
   <button className='loginButton' onClick={onSubmitSignIn}>Sign In</button>
+  <div className='signup-option'>Or you can</div>
+  <div className='third-parties' onClick={onSubmitSignIn}>
+    <div className='ggButton'>
+        <div className='logo'>
+            <img src={google} alt='google'/>
+        </div>
+        <div className='text'>Sign In with Google</div>
+    </div>
+    <div className='ggButton'>
+        <div className='logo'>
+            <img src={facebook} alt='facebook'/>
+        </div>
+        <div className='text'>Sign In with Facebook</div>
+    </div>
+  </div>
   <div className='signup-option'>Not a member? <a href="#" onClick={()=>changeRoute(2)}>Register</a> now</div>
 </div>
 }

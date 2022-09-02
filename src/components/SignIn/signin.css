@@ -56,3 +56,42 @@ h1{
     text-align: center;
     color: #565656;
 }
+.third-parties{
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    padding: 1px;
+    background-color: rgb(66, 133, 244);
+}
+
+.ggButton{
+    display: flex;
+    border: none;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    height: 50px;  
+    cursor: pointer;
+}
+.ggButton .text{
+    background-color: rgb(66, 133, 244);
+    color: white;
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 10px;
+}
+.ggButton .logo {
+    display: flex;
+    background-color: white;
+    width: 50px;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+}
+.logo img {
+    margin-left: 9px;
+    width: 30px;
+    height: 30px;
+}
