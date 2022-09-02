@@ -10,7 +10,7 @@
     * [Packages](#packages)
 2. [Getting Started](#getting-started)
     * [Installation](#installation)
-3. [Usage](#usage)
+3. [Sign In and Register](#sign-in-and-register)
 4. [Author](#author)
 5. [Avaiable Scripts](#avaiable-scripts)
 
@@ -40,24 +40,22 @@ To get a local copy up and running follow these simple example steps.
 
 ### Installation
 
-1. Get a free Google Maps API Key at [Geocoding](https://developers.google.com/maps/documentation/geocoding/overview)
-2. Get a free Weather API Key at [OpenWeather](https://openweathermap.org/current)
-3. Clone the repo
+1. Get a free Google Maps API Key at [Geocoding](https://developers.google.com/maps/documentation/geocoding/overview) and [OpenWeather](https://openweathermap.org/current)
+2. Clone the repo
 ```
 git clone https://github.com/vitdoan/Check-In.git
 ```
-4. Install NPM packages
+3. Install NPM packages
 ```
 npm install
 ```
-5. Enter your API in your `.env`
+4. Enter your API in `.env`
 ```
 REACT_APP_GOOGLE_MAPS_API_KEY=YOUR_API_KEY
 REACT_APP_WEATHER_API_KEY=YOUR_API_KEY
 ```
 
-### Usage
-Sign In and Register Page.
+### Sign In and Register
 Third Parties sign in are handled with [Firebase](https://firebase.google.com/)
 
 <img height="300" alt="Sign In" src="https://user-images.githubusercontent.com/106452170/188226781-523b5a06-e966-4182-a463-5d47511a451a.png"> <img height="300" alt="Register" src="https://user-images.githubusercontent.com/106452170/188215771-0e61e240-1971-4588-89ec-86ec44c6171c.png"> 
