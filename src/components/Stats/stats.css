@@ -50,6 +50,7 @@
 }
 
 .statsDescription {
+    text-align: right;
 }
 
 .num, .num2, .text {

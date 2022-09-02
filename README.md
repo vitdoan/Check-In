@@ -1,5 +1,5 @@
 # Places Around Me
-<img width="920" alt="Screen Shot 2022-09-02 at 07 26 26" src="https://user-images.githubusercontent.com/106452170/188034399-5480de76-5a1c-4bfa-8273-e2896aeb5252.png">
+<img alt="Screen Shot 2022-09-02 at 07 26 26" src="https://user-images.githubusercontent.com/106452170/188034399-5480de76-5a1c-4bfa-8273-e2896aeb5252.png">
 
 
 ## Introduction
