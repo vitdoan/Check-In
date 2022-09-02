@@ -1,19 +1,13 @@
 # Check In
 
-CONTENTS OF THIS FILE
----------------------
-
- * About The Project
- * Requirements
- * Recommended modules
- * Installation
- * Configuration
- * Troubleshooting
- * FAQ
- * Maintainers
-
 <img alt="Screen Shot 2022-09-02 at 07 39 51" src="https://user-images.githubusercontent.com/106452170/188035210-7a19fc4c-ad54-43d4-9316-3c55a4520cc7.png">
 
+# Table of Contents
+
+1. [About The Project](#about-the-project)
+2. [My second title](#my-second-title)
+
+## My second title
 
 ## About The Project
 This Web Application helps user check in 
