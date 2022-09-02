@@ -56,7 +56,8 @@ REACT_APP_WEATHER_API_KEY=YOUR_API_KEY
 ```
 
 ### Usage
-Register and Sign In Page.
+Sign In and Register Page.
+Third Parties sign in are handled with [Firebase](https://firebase.google.com/)
 
 <img height="300" alt="Sign In" src="https://user-images.githubusercontent.com/106452170/188226781-523b5a06-e966-4182-a463-5d47511a451a.png"> <img height="300" alt="Register" src="https://user-images.githubusercontent.com/106452170/188215771-0e61e240-1971-4588-89ec-86ec44c6171c.png"> 
 
