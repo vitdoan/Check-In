@@ -15,12 +15,12 @@
 ## About The Project
 This Web Application helps user check in 
 
-* APIs:
+### APIs:
 - Geolocation
 - Google Maps API
 - Rapid APIs
 
-* Built with: 
+### Built with: 
 - ReactJS
 - JavaScript
 
