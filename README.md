@@ -5,9 +5,9 @@
 # Table of Contents
 
 1. [About The Project](#about-the-project)
-2. [My second title](#my-second-title)
+2. [Getting Started](#getting-started)
+3. [Installation](#installation)
 
-## My second title
 
 ## About The Project
 This Web Application helps user check in 
@@ -39,6 +39,12 @@ npm install
 ```
 const API_KEY = 'ENTER YOUR API';
 ```
+
+## Author
+
+👤 **Vi Doan**
+
+* Website: http://vitdoan.herokuapp.com/
 
 ## Available Scripts
 
