@@ -20,8 +20,7 @@ let day = weekday[d.getDay()];
 export default function Weather({ coordinates }) {
 	const [weather, setWeather] = useState("");
 	const [city, setCity] = useState("");
-	// const apiKey = process.env.REACT_APP_APIKEY;
-	const apiKey = "6fc2d866008ab22cb737eb0937e4899d";
+	const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
 
 	const apiCall = async (e) => {
 		const url = `https://api.openweathermap.org/data/2.5/weather?lat=${coordinates.lat}&lon=${coordinates.lng}&appid=${apiKey}&units=metric`;
