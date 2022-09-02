@@ -16,9 +16,9 @@
 This Web Application helps user check in 
 
 ### APIs:
-- Geolocation
+- Geocoding
 - Google Maps API
-- Rapid APIs
+- Weather API 
 
 ### Built with: 
 - ReactJS
@@ -29,18 +29,18 @@ To get a local copy up and running follow these simple example steps.
 
 ### Installation
 
-1. Get a free API Key at [Rapid API](https://rapidapi.com/hub)
+1. Get a free API Key at [Geocoding](https://developers.google.com/maps/documentation/geocoding/overview)
 2. Clone the repo
 ```
-git clone https://github.com/vitdoan/Place-Advisor.git
+git clone https://github.com/vitdoan/Check-In.git
 ```
 3. Install NPM packages
 ```
 npm install
 ```
-4. Enter your API in `config.js`
+4. Enter your API in your `.env`
 ```
-const API_KEY = 'ENTER YOUR API';
+REACT_APP_GOOGLE_MAPS_API_KEY=YOUR_API_KEY
 ```
 
 ## Author
